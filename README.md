@@ -33,3 +33,5 @@ This script solves the problem.
             systemctl status vm-boot-order.service
             systemctl stop vm-boot-order.service
             systemctl status vm-boot-order.service
+
+Source: https://gist.github.com/cyberang3l/f4c8b1ab6fc48374fbae9553d89e5eed
