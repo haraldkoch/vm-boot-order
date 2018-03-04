@@ -1,3 +1,13 @@
+# vm-boot-order
+
+libvirt has no facility for controlling the order that domains (virtual
+machines) boot, nor delays between VMs. This creates thrashing during the
+startup of a server with many domains.
+
+This script solves the problem.
+
+## Instructions
+
 1. Ensure that your VMs can shutdown gracefully when the *power-button* is pressed.
 2. Place the file `vm-boot-order.py` in `/opt` directory
 3. Make it executable: `chmod +x /opt/vm-boot-order.py`
