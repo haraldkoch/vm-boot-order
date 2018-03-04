@@ -9,13 +9,13 @@ This script solves the problem.
 ## Instructions
 
 1. Ensure that your VMs can shutdown gracefully when the *power-button* is pressed.
-2. Place the file `vm-boot-order.py` in `/opt` directory
-3. Make it executable: `chmod +x /opt/vm-boot-order.py`
+2. Place the file `vm-boot-order.py` in `/usr/local/sbin` directory
+3. Make it executable: `chmod +x /usr/local/sbin/vm-boot-order.py`
 4. Check that the script starts and shuts down your VMs as expected. The script can be executed as follows:
 
-        /opt/vm-boot-order.py start
-        /opt/vm-boot-order.py stop
-        /opt/vm-boot-order.py status
+        /usr/local/sbin/vm-boot-order.py start
+        /usr/local/sbin/vm-boot-order.py stop
+        /usr/local/sbin/vm-boot-order.py status
 
 4. Make a systemd service to execute the script when booting or shutting down the hypervisor:
 

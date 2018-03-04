@@ -6,8 +6,8 @@ After=libvirtd.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/python /opt/vm-boot-order.py start
-ExecStop=/usr/bin/python /opt/vm-boot-order.py stop
+ExecStart=/usr/bin/python /usr/local/sbin/vm-boot-order.py start
+ExecStop=/usr/bin/python /usr/local/sbin/vm-boot-order.py stop
 
 [Install]
 WantedBy=multi-user.target
