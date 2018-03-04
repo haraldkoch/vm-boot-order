@@ -106,7 +106,11 @@ def vm_status(libvirt_conn):
 
 if __name__ == '__main__':
     #connect to hypervisor running on localhost
-    conn = libvirt.open('qemu:///system')
+    for c in range(1, 10):
+        try:
+            conn = libvirt.open('qemu:///system')
+        except libvirt.libvirtError:
+            time.sleep(2)
 
     if len(sys.argv) > 1:
         if sys.argv[1] == 'start':
